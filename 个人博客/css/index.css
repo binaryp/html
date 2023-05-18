@@ -1,0 +1,335 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+	color: wheat;
+}
+a {
+	color: wheat;
+	cursor: grabbing;
+}
+body, html {
+	cursor: url('../img/ayuda.cur'), auto;
+	font-family: "楷体", serif;
+}
+::-webkit-scrollbar {
+	width: 5px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+	background-color: transparent;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(180deg, orangered 10%, #93897e);
+	border-radius: 20px;
+}
+.F12 {
+    width: 300px;
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateX(330px);
+    transition: all .6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.F12 img {
+    cursor: grabbing;
+}
+nav {
+	width: 100%;
+	height: 60px;
+	font-size: 18px;
+}
+.nav {
+	width: 1100px;
+	margin: auto;
+	padding-top: 30px;
+}
+.nav > li {
+	float: left;
+	list-style: none;
+
+}
+.nav > li a {
+	color: white;
+	display: block;
+	text-decoration: none;
+	width: 100px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 15px;
+}
+.nav > li a:hover {
+	background-color: rgba(255, 255, 255, .5);
+}
+.nav > li:nth-of-type(3) ul{
+	position: absolute;
+	display: none;
+}
+#main {
+	position: absolute;
+	width: 100%;
+	left: 50%;
+	transform: translatex(-50%);
+	margin-top: 40px;
+}
+
+#right {
+	position: relative;
+	width: 300px;
+	margin-left: 10px;
+	float: left;
+	background-color: rgba(255, 255, 255, .1);
+	height: 400px;
+}
+#right #img {
+	position: absolute;
+	display: block;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	width: 100px;
+}
+#right h4 {
+	margin-top: 55px;
+	text-align: center;
+	color: white;
+}
+#conetne {
+	margin-top: 10px;
+	width: 100%;
+	height: 80px;
+		display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+#conetne li {
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+}
+#conetne li a:hover {
+		background-color: rgba(255, 255, 255, .5);
+}
+#conetne li a {
+	color: white;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	width: 110px;
+	height: 90%;
+	flex-shrink: 0;
+}
+
+svg {
+	width: 18px;
+	height: 18px;
+	margin-right: 10px;
+}
+
+#left {
+	border-radius: 10px;
+	width: 60%;
+	float: left;
+	height: 600px;
+	overflow: auto;
+	margin-left: 10%;
+}
+#left main {
+	width: 100%;
+	height: 100%;
+}
+#left main:nth-of-type(3) {
+	height: fit-content;
+}
+#home {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#home p:first-of-type {
+	padding-top: 160px;
+}
+#home p {
+	padding-top: 20px;
+	width: 90%;
+	margin: auto;
+	font-size: 22px;
+	text-indent: 50px;
+}
+#project h2 {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+#project h3 {
+	width: 90%;
+	padding-top: 20px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+#project div {
+	width: 90%;
+	margin: auto;
+}
+#project h6 {
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	margin-left: 50px;
+}
+#project a:first-of-type {
+	margin-left: 40px;
+}
+#project a {
+	line-height: 25px;
+	margin-left: 10px;
+	color: white;
+}
+#project a::after {
+	margin-left: 10px;
+	content: ",";
+}
+#project a:last-of-type::after {
+	content: "";
+}
+#project label {
+	display: block;
+	width: 100%;
+}
+#project div:last-of-type label:last-of-type {
+	margin-bottom: 100px;
+}
+.right {
+	display: none;
+}
+#experience h2 {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 70px;
+}
+#experience p:first-of-type {
+	margin-top: 40px;
+}
+#experience p {
+	line-height: 40px;
+	text-indent: 40px;
+	font-size: 22px;
+	width: 85%;
+	margin: auto;
+}
+
+#phome {
+	display: flex;
+	align-items: center;
+}
+#phome main {
+	height: fit-content;
+	width: 80%;
+	margin: auto;
+}
+#phome main h4 {
+	font-size: 28px;
+}
+#phome main label {
+	font-size: 22px;
+}
+#right span {
+	color: white;
+}
+
+#left main:nth-child(4) img {
+    width: 200px;
+	height: 150px;
+	display: block;
+	flex-shrink: 0;
+	margin: 10px 10px 0 10px;
+}
+#left main:nth-child(4) {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 90%;
+	margin: auto;
+	/* height: fit-content; */
+	justify-content: space-between;
+}
+
+@media (max-width: 1100px) {
+	body {
+		background-color: black;
+		overflow-y: auto;
+		background-image: url('../img/新图网_星空_ixintu.com.png');
+	}
+	#container {
+		background-image: url('../img/新图网_星空_ixintu.com.png');
+	}
+	.nav > li a {
+		border: solid 1px white;
+		margin-left: 5px;
+	}
+	.right_ {
+		display: none;
+	}
+	#left {
+		margin-left: 0;
+		width: 100%;
+		overflow: visible;
+	}
+	#left main {
+		background-color: transparent;
+	}
+	.F12 {
+		display: none;
+	}
+	.right {
+		display: block;
+	}
+	nav {
+		display: none;
+	}
+	#right {
+		width: 100%;
+		background-color: transparent;
+		margin-left: 0;
+	}
+	#right img:first-of-type {
+		width: 100%;
+		height: 240px;
+	}
+	#experience div {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#experience img {
+		width: 160px;
+		margin: 10px 10px 0 10px;
+	}
+	#project label h6{
+		width: 100%;
+	}
+	#project label a:first-of-type {
+		margin-left: 40px;
+	}
+	#project label a:last-of-type {
+		margin-bottom: 20px;
+	}
+	#left main:nth-child(4) {
+		justify-content: center;
+	}
+	#project label a {
+		margin-left: 40px;
+		display: block;
+	}
+}
